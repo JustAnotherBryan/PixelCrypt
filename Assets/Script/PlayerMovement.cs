@@ -12,6 +12,7 @@ namespace TopDown
 
         [Header("Animations")]
         [SerializeField] private Animator anim;
+        [SerializeField] private SpriteRenderer spriteRenderer;
         private string lastDirection = "Down";
 
         private Rigidbody2D rb;
@@ -59,11 +60,13 @@ namespace TopDown
             {
                 lastDirection = "Right";
                 finalDirection = new Vector2(1, 0);
+                spriteRenderer.flipX = false; // facing right
             }
             else if (input.x < -0.01f)
             {
                 lastDirection = "Left";
                 finalDirection = new Vector2(-1, 0);
+                spriteRenderer.flipX = true; // invert animation to the left
             }
             else
                 finalDirection = Vector2.zero;
