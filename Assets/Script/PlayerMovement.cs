@@ -1,85 +1,52 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace TopDown
+public class PlayerMovement : MonoBehaviour
 {
-    public class PlayerMovement : MonoBehaviour
+    [Header("Movement")]
+    public Rigidbody2D rb;
+    public float moveSpeed = 5f;
+
+    private Vector2 movementInput;
+
+    [Header("Animation")]
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
+
+    void Update()
     {
-        [Header("Movement")]
-        [SerializeField] private float moveSpeed = 5f;
-        private Vector2 movementDirection;
-        private Vector2 currentInput;
+        // Move the player
+        rb.velocity = movementInput * moveSpeed;
 
-        [Header("Animations")]
-        [SerializeField] private Animator anim;
-        [SerializeField] private SpriteRenderer spriteRenderer;
-        private string lastDirection = "Down";
+        // Handle animation
+        HandleAnimation();
+    }
 
-        private Rigidbody2D rb;
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        movementInput = context.ReadValue<Vector2>();
+        Debug.Log("Movement Input : " + movementInput);
+    }
 
-        private void Awake()
+    private void HandleAnimation()
+    {
+        // Play "Run" if moving, otherwise "Idle"
+        if (movementInput != Vector2.zero)
         {
-            rb = GetComponent<Rigidbody2D>();
+            animator.Play("Run");
+
+            // Flip sprite left/right based on horizontal movement
+            if (movementInput.x < 0)
+                spriteRenderer.flipX = true;
+            else if (movementInput.x > 0)
+                spriteRenderer.flipX = false;
         }
-        private void Update()
+        else
         {
-            HandleAnimations();
-        }
-        private void FixedUpdate()
-        {
-            rb.velocity = movementDirection * moveSpeed;
-        }
-
-        private void HandleAnimations()
-        {
-            if (anim == null) return;
-
-            string animationName = "";
-
-            if (movementDirection == Vector2.zero)
-                animationName = "Idle";
-            else
-                animationName = "Walking";
-
-            anim.Play(animationName + lastDirection);
-        }
-        private Vector3 GetDirection(Vector3 input)
-        {
-            Vector3 finalDirection = Vector2.zero;
-            if (input.y > 0.01f)
-            {
-                lastDirection = "Up";
-                finalDirection = new Vector2(0, 1);
-            }
-            else if (input.y < -0.01f)
-            {
-                lastDirection = "Down";
-                finalDirection = new Vector2(0, -1);
-            }
-            else if (input.x > 0.01f)
-            {
-                lastDirection = "Right";
-                finalDirection = new Vector2(1, 0);
-                spriteRenderer.flipX = false; // facing right
-            }
-            else if (input.x < -0.01f)
-            {
-                lastDirection = "Left";
-                finalDirection = new Vector2(-1, 0);
-                spriteRenderer.flipX = true; // invert animation to the left
-            }
-            else
-                finalDirection = Vector2.zero;
-
-            return finalDirection;
+            animator.Play("Idle");
         }
 
-        #region Input
-        private void OnMove(InputValue value)
-        {
-            currentInput = value.Get<Vector2>().normalized;
-            movementDirection = GetDirection(currentInput);
-        }
-        #endregion
+    
+
     }
 }
