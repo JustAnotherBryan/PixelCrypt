@@ -27,7 +27,16 @@
                     "name": "Fire",
                     "type": "Button",
                     "id": "934e90f3-cdbe-41d3-a623-0cba6fad4cfa",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "83610d6e-b28f-4567-89e3-e715200e9208",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -251,6 +260,17 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed37c4ab-2fb3-44e8-8f23-dcb9ef689295",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

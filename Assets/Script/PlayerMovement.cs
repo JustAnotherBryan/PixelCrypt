@@ -8,17 +8,28 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
 
     private Vector2 movementInput;
+    private bool isAttacking = false;
 
     [Header("Animation")]
     public Animator animator;
     public SpriteRenderer spriteRenderer;
 
+    [Header("Combat")]
+    public float attackDamage = 10f;
+    private int attackIndex = 0;
+
     void Update()
     {
-        // Move the player
-        rb.velocity = movementInput * moveSpeed;
+        // Prevent movement while attacking
+        if (!isAttacking)
+        {
+            rb.velocity = movementInput * moveSpeed;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
 
-        // Handle animation
         HandleAnimation();
     }
 
@@ -28,9 +39,31 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Movement Input : " + movementInput);
     }
 
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed && !isAttacking)
+        {
+            isAttacking = true;
+
+            // Alternate between Attack1 and Attack2
+            string attackAnim = attackIndex % 2 == 0 ? "Attack1" : "Attack2";
+            animator.Play(attackAnim);
+            attackIndex++;
+
+            // Reset attack after short delay (based on animation length)
+            Invoke(nameof(ResetAttack), 0.5f); // Adjust timing if needed
+        }
+    }
+
+    private void ResetAttack()
+    {
+        isAttacking = false;
+    }
+
     private void HandleAnimation()
     {
-        // Play "Run" if moving, otherwise "Idle"
+        if (isAttacking) return;
+
         if (movementInput != Vector2.zero)
         {
             animator.Play("Run");
@@ -45,8 +78,5 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.Play("Idle");
         }
-
-    
-
     }
 }
