@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 1
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -3364,13 +3365,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1820898282
+    guid: -556333074
     name: enemies
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: enemies_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -3379,7 +3380,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 83c2697b73e30f44b9dd0a739062007c
-    - name: enemies_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -3388,7 +3389,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: c07337187dc773d4dab1766dc7b792b1
-    - name: enemies_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -3397,7 +3398,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: a4129063325d14c45bd8b44ef99e9feb
-    - name: enemies_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -3406,7 +3407,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: 8b77a365a13b24b4fa0d4e31cc20a5d7
-    - name: enemies_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -3415,7 +3416,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 6873dcd1df3c8e14cb79974e6b342631
-    - name: enemies_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -3424,7 +3425,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: ed736db8893f4ba4faafe8174771e6e6
-    - name: enemies_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -3433,7 +3434,7 @@ ScriptedImporter:
         width: 10
         height: 15
       spriteId: 87e7ba9b40337234fafc76406eb2fc55
-    - name: enemies_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -3442,7 +3443,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 91ef587719662884eb94225aad0c9eeb
-    - name: enemies_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -3451,7 +3452,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: fbbba0805c0d4474b8035a3d966c4b25
-    - name: enemies_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -3460,7 +3461,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: b1db8d2027fe57b4797de3b1820194dc
-    - name: enemies_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -3469,7 +3470,7 @@ ScriptedImporter:
         width: 15
         height: 14
       spriteId: ef9540b6b60b7964f808974ba3d53e23
-    - name: enemies_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -3478,7 +3479,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 6c873e40afbc4de49b985d8e1612ecb0
-    - name: enemies_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -3487,7 +3488,7 @@ ScriptedImporter:
         width: 10
         height: 16
       spriteId: e43df839df03ca5468434b4c2ee96c42
-    - name: enemies_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -3496,7 +3497,7 @@ ScriptedImporter:
         width: 10
         height: 16
       spriteId: 092fc28270290714f99236f24d32e692
-    - name: enemies_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -3505,7 +3506,7 @@ ScriptedImporter:
         width: 11
         height: 15
       spriteId: a3f2936eb0df96545baf6b507ba7441d
-    - name: enemies_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -3514,7 +3515,7 @@ ScriptedImporter:
         width: 11
         height: 14
       spriteId: 552b3e73e91bbdb4690ec850c9668db4
-    - name: enemies_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -3523,7 +3524,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 2d226d443a4219d408dd900f6387bc67
-    - name: enemies_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -3532,7 +3533,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: 6873c42f1e68f044888c354e53067ad6
-    - name: enemies_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -3541,7 +3542,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 1a223c9bd618494498c27c868b29a780
-    - name: enemies_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -3550,7 +3551,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 561066669aff75f4baf4008c47df0f16
-    - name: enemies_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -3559,7 +3560,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 66103531b6248d344951cdc31d9f76ce
-    - name: enemies_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -3568,7 +3569,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 2c9b0aa9e64d5754bac5b3f9ed124f2a
-    - name: enemies_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -3577,7 +3578,7 @@ ScriptedImporter:
         width: 25
         height: 19
       spriteId: f004987f9f45ae34e9cb36738f7f0fab
-    - name: enemies_Frame_23
+    - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -3586,7 +3587,7 @@ ScriptedImporter:
         width: 25
         height: 19
       spriteId: a4c383f6c03a538419e736bf8b0971a7
-    - name: enemies_Frame_24
+    - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -3595,7 +3596,7 @@ ScriptedImporter:
         width: 25
         height: 17
       spriteId: 0732fa22c97050c4e9e25febe8f9e46e
-    - name: enemies_Frame_25
+    - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -3604,7 +3605,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: a718c711fbd596246855164c4e5585d7
-    - name: enemies_Frame_26
+    - name: Frame_26
       frameIndex: 26
       additiveSortOrder: 0
       cellRect:
@@ -3613,7 +3614,7 @@ ScriptedImporter:
         width: 17
         height: 15
       spriteId: bf8546932a8ea8a40827f90d4876274b
-    - name: enemies_Frame_27
+    - name: Frame_27
       frameIndex: 27
       additiveSortOrder: 0
       cellRect:
@@ -3622,7 +3623,7 @@ ScriptedImporter:
         width: 18
         height: 15
       spriteId: 8f86ac2e5abd3a54daed286d56d3a0ae
-    - name: enemies_Frame_28
+    - name: Frame_28
       frameIndex: 28
       additiveSortOrder: 0
       cellRect:
@@ -3631,7 +3632,7 @@ ScriptedImporter:
         width: 13
         height: 16
       spriteId: 52df9a1905beda44f9859ea0fece07c6
-    - name: enemies_Frame_29
+    - name: Frame_29
       frameIndex: 29
       additiveSortOrder: 0
       cellRect:
@@ -3640,7 +3641,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 2880ef1a3a71106449e4b3de84412bdc
-    - name: enemies_Frame_30
+    - name: Frame_30
       frameIndex: 30
       additiveSortOrder: 0
       cellRect:
@@ -3649,7 +3650,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 0f1ce8e6c65acbe46b3b024f8c1dc577
-    - name: enemies_Frame_31
+    - name: Frame_31
       frameIndex: 31
       additiveSortOrder: 0
       cellRect:
@@ -3658,7 +3659,7 @@ ScriptedImporter:
         width: 17
         height: 15
       spriteId: 5c2b6ce91b4b1ca4287f75d77c46e835
-    - name: enemies_Frame_32
+    - name: Frame_32
       frameIndex: 32
       additiveSortOrder: 0
       cellRect:
@@ -3667,7 +3668,7 @@ ScriptedImporter:
         width: 18
         height: 15
       spriteId: 0289b17f261897f43908572e548986ce
-    - name: enemies_Frame_33
+    - name: Frame_33
       frameIndex: 33
       additiveSortOrder: 0
       cellRect:
@@ -3676,7 +3677,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 3790f3e22be218841850ee8ad68b228a
-    - name: enemies_Frame_34
+    - name: Frame_34
       frameIndex: 34
       additiveSortOrder: 0
       cellRect:
@@ -3685,7 +3686,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: b7e2fb96b7e98fa43b7d31f2ec3f907b
-    - name: enemies_Frame_35
+    - name: Frame_35
       frameIndex: 35
       additiveSortOrder: 0
       cellRect:
@@ -3694,7 +3695,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: 92023c99572923c42b49d15ae21c2029
-    - name: enemies_Frame_36
+    - name: Frame_36
       frameIndex: 36
       additiveSortOrder: 0
       cellRect:
@@ -3703,7 +3704,7 @@ ScriptedImporter:
         width: 11
         height: 16
       spriteId: 426c66304557f0e468956880a32096fc
-    - name: enemies_Frame_37
+    - name: Frame_37
       frameIndex: 37
       additiveSortOrder: 0
       cellRect:
@@ -3712,7 +3713,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 836695eda5352bf4f9a7440dc26b83ab
-    - name: enemies_Frame_38
+    - name: Frame_38
       frameIndex: 38
       additiveSortOrder: 0
       cellRect:
@@ -3721,7 +3722,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 62f710bd19dba5e40b5c96ff510e4617
-    - name: enemies_Frame_39
+    - name: Frame_39
       frameIndex: 39
       additiveSortOrder: 0
       cellRect:
@@ -3730,7 +3731,7 @@ ScriptedImporter:
         width: 11
         height: 16
       spriteId: 94630c36abfe1104d8194149eb7ef194
-    - name: enemies_Frame_40
+    - name: Frame_40
       frameIndex: 40
       additiveSortOrder: 0
       cellRect:
@@ -3739,7 +3740,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 24d9272a53509a8449f773e942c65755
-    - name: enemies_Frame_41
+    - name: Frame_41
       frameIndex: 41
       additiveSortOrder: 0
       cellRect:
@@ -3748,7 +3749,7 @@ ScriptedImporter:
         width: 13
         height: 17
       spriteId: 701d8b364f94dd147b0398f3f44e87ae
-    - name: enemies_Frame_42
+    - name: Frame_42
       frameIndex: 42
       additiveSortOrder: 0
       cellRect:
@@ -3757,7 +3758,7 @@ ScriptedImporter:
         width: 18
         height: 14
       spriteId: facc5bf294250c5459c22c5ac4ade84f
-    - name: enemies_Frame_43
+    - name: Frame_43
       frameIndex: 43
       additiveSortOrder: 0
       cellRect:
@@ -3766,7 +3767,7 @@ ScriptedImporter:
         width: 20
         height: 10
       spriteId: 68dea5bae575c5a4e97a19082a950ef0
-    - name: enemies_Frame_44
+    - name: Frame_44
       frameIndex: 44
       additiveSortOrder: 0
       cellRect:
@@ -3775,7 +3776,7 @@ ScriptedImporter:
         width: 21
         height: 9
       spriteId: 72445dd3c84e0c54ca3e172bcf40b43d
-    - name: enemies_Frame_45
+    - name: Frame_45
       frameIndex: 45
       additiveSortOrder: 0
       cellRect:
@@ -3784,7 +3785,7 @@ ScriptedImporter:
         width: 22
         height: 9
       spriteId: 798b0750c68ad3d46943e2ba0cccbd44
-    - name: enemies_Frame_46
+    - name: Frame_46
       frameIndex: 46
       additiveSortOrder: 0
       cellRect:
@@ -3793,7 +3794,7 @@ ScriptedImporter:
         width: 21
         height: 8
       spriteId: 211598a6149dbbf4bb11b7c17118261f
-    - name: enemies_Frame_47
+    - name: Frame_47
       frameIndex: 47
       additiveSortOrder: 0
       cellRect:
@@ -3802,7 +3803,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 5808f50d9a30ba84db6286a2d4c44c8b
-    - name: enemies_Frame_48
+    - name: Frame_48
       frameIndex: 48
       additiveSortOrder: 0
       cellRect:
@@ -3811,7 +3812,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 96ae2b34accf56e49aec629b1cb22986
-    - name: enemies_Frame_49
+    - name: Frame_49
       frameIndex: 49
       additiveSortOrder: 0
       cellRect:
@@ -3820,7 +3821,7 @@ ScriptedImporter:
         width: 12
         height: 17
       spriteId: 7bb400cd3a21be147885ad335e14569a
-    - name: enemies_Frame_50
+    - name: Frame_50
       frameIndex: 50
       additiveSortOrder: 0
       cellRect:
@@ -3829,7 +3830,7 @@ ScriptedImporter:
         width: 12
         height: 17
       spriteId: 3125c8c3acd6bcb41abe6909245ab0d0
-    - name: enemies_Frame_51
+    - name: Frame_51
       frameIndex: 51
       additiveSortOrder: 0
       cellRect:
@@ -3838,7 +3839,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 78fa60f884c3df14691f00a3fc6f9702
-    - name: enemies_Frame_52
+    - name: Frame_52
       frameIndex: 52
       additiveSortOrder: 0
       cellRect:
@@ -3847,7 +3848,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: ea3b3225909be97488a5376c9689d9c3
-    - name: enemies_Frame_53
+    - name: Frame_53
       frameIndex: 53
       additiveSortOrder: 0
       cellRect:
@@ -3856,7 +3857,7 @@ ScriptedImporter:
         width: 13
         height: 18
       spriteId: 9730cb7c75055904d9fda925b0b16ed2
-    - name: enemies_Frame_54
+    - name: Frame_54
       frameIndex: 54
       additiveSortOrder: 0
       cellRect:
@@ -3865,7 +3866,7 @@ ScriptedImporter:
         width: 13
         height: 19
       spriteId: 1ff238f20a04a1d44bf7e3b822f9a914
-    - name: enemies_Frame_55
+    - name: Frame_55
       frameIndex: 55
       additiveSortOrder: 0
       cellRect:
@@ -3874,7 +3875,7 @@ ScriptedImporter:
         width: 13
         height: 18
       spriteId: ff4472206f96dff40b2a28c4b858aba6
-    - name: enemies_Frame_56
+    - name: Frame_56
       frameIndex: 56
       additiveSortOrder: 0
       cellRect:
@@ -3883,7 +3884,7 @@ ScriptedImporter:
         width: 12
         height: 17
       spriteId: 41fff4d29a18e8145b632c3f9075bf55
-    - name: enemies_Frame_57
+    - name: Frame_57
       frameIndex: 57
       additiveSortOrder: 0
       cellRect:
@@ -3892,7 +3893,7 @@ ScriptedImporter:
         width: 13
         height: 18
       spriteId: 6985e819c83958744b81eb3774209074
-    - name: enemies_Frame_58
+    - name: Frame_58
       frameIndex: 58
       additiveSortOrder: 0
       cellRect:
@@ -3901,7 +3902,7 @@ ScriptedImporter:
         width: 12
         height: 19
       spriteId: 5fc867235b152a64889a8bac1e42d661
-    - name: enemies_Frame_59
+    - name: Frame_59
       frameIndex: 59
       additiveSortOrder: 0
       cellRect:
@@ -3910,7 +3911,7 @@ ScriptedImporter:
         width: 12
         height: 18
       spriteId: 5d1671fb7c81f1b489d476f6bb9e1e48
-    - name: enemies_Frame_60
+    - name: Frame_60
       frameIndex: 60
       additiveSortOrder: 0
       cellRect:
@@ -3919,7 +3920,7 @@ ScriptedImporter:
         width: 12
         height: 17
       spriteId: e2bf6b1365120d045a8ff081c620011f
-    - name: enemies_Frame_61
+    - name: Frame_61
       frameIndex: 61
       additiveSortOrder: 0
       cellRect:
@@ -3928,7 +3929,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 76c6e4746db5f23458254a3ed2ed6e76
-    - name: enemies_Frame_62
+    - name: Frame_62
       frameIndex: 62
       additiveSortOrder: 0
       cellRect:
@@ -3937,7 +3938,7 @@ ScriptedImporter:
         width: 13
         height: 15
       spriteId: 688f6d0e39e84ab46a8e392631a0d2eb
-    - name: enemies_Frame_63
+    - name: Frame_63
       frameIndex: 63
       additiveSortOrder: 0
       cellRect:
@@ -3946,7 +3947,7 @@ ScriptedImporter:
         width: 12
         height: 19
       spriteId: d806fbd1a6423234aa686a5180217356
-    - name: enemies_Frame_64
+    - name: Frame_64
       frameIndex: 64
       additiveSortOrder: 0
       cellRect:
@@ -3955,7 +3956,7 @@ ScriptedImporter:
         width: 12
         height: 20
       spriteId: d97902ff129f8ca43ba9fd19df4a3154
-    - name: enemies_Frame_65
+    - name: Frame_65
       frameIndex: 65
       additiveSortOrder: 0
       cellRect:
@@ -3964,7 +3965,7 @@ ScriptedImporter:
         width: 17
         height: 18
       spriteId: 449e8c44af7d1d84fb343d6294d46942
-    - name: enemies_Frame_66
+    - name: Frame_66
       frameIndex: 66
       additiveSortOrder: 0
       cellRect:
@@ -3973,7 +3974,7 @@ ScriptedImporter:
         width: 21
         height: 19
       spriteId: 1c2da5c09caecd84ead9598b388a8bce
-    - name: enemies_Frame_67
+    - name: Frame_67
       frameIndex: 67
       additiveSortOrder: 0
       cellRect:
@@ -3982,7 +3983,7 @@ ScriptedImporter:
         width: 21
         height: 19
       spriteId: 19551267f445f604eb119d0b2e10c60d
-    - name: enemies_Frame_68
+    - name: Frame_68
       frameIndex: 68
       additiveSortOrder: 0
       cellRect:
@@ -3991,7 +3992,7 @@ ScriptedImporter:
         width: 19
         height: 21
       spriteId: 5ae608d0706116d4794245822588c54b
-    - name: enemies_Frame_69
+    - name: Frame_69
       frameIndex: 69
       additiveSortOrder: 0
       cellRect:
@@ -4000,7 +4001,7 @@ ScriptedImporter:
         width: 17
         height: 22
       spriteId: 50655ae782cddbc4986c85a3a903576e
-    - name: enemies_Frame_70
+    - name: Frame_70
       frameIndex: 70
       additiveSortOrder: 0
       cellRect:
@@ -4009,7 +4010,7 @@ ScriptedImporter:
         width: 21
         height: 22
       spriteId: e8c877cc98490ac468c6085dfb0e098f
-    - name: enemies_Frame_71
+    - name: Frame_71
       frameIndex: 71
       additiveSortOrder: 0
       cellRect:
@@ -4018,7 +4019,7 @@ ScriptedImporter:
         width: 25
         height: 18
       spriteId: 9c738245ac68fba45860083486c90a1d
-    - name: enemies_Frame_72
+    - name: Frame_72
       frameIndex: 72
       additiveSortOrder: 0
       cellRect:
@@ -4027,7 +4028,7 @@ ScriptedImporter:
         width: 21
         height: 14
       spriteId: 00ec17e29102502489d442dfadc90d9c
-    - name: enemies_Frame_73
+    - name: Frame_73
       frameIndex: 73
       additiveSortOrder: 0
       cellRect:
@@ -4036,7 +4037,7 @@ ScriptedImporter:
         width: 18
         height: 13
       spriteId: f34a9824aa0e1c440b0cc86811c871d3
-    - name: enemies_Frame_74
+    - name: Frame_74
       frameIndex: 74
       additiveSortOrder: 0
       cellRect:
@@ -4045,7 +4046,7 @@ ScriptedImporter:
         width: 17
         height: 15
       spriteId: 6504ff0279e7b624c8b6f43706d51f77
-    - name: enemies_Frame_75
+    - name: Frame_75
       frameIndex: 75
       additiveSortOrder: 0
       cellRect:
@@ -4054,7 +4055,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: d7f2efdb7e38d104aad7da66ea54f1cc
-    - name: enemies_Frame_76
+    - name: Frame_76
       frameIndex: 76
       additiveSortOrder: 0
       cellRect:
@@ -4063,7 +4064,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 41f02f8e3d917614cb03b411fd598d28
-    - name: enemies_Frame_77
+    - name: Frame_77
       frameIndex: 77
       additiveSortOrder: 0
       cellRect:
@@ -4072,7 +4073,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 5c2d4212168a8e347814e40d9d1d549f
-    - name: enemies_Frame_78
+    - name: Frame_78
       frameIndex: 78
       additiveSortOrder: 0
       cellRect:
@@ -4081,7 +4082,7 @@ ScriptedImporter:
         width: 14
         height: 17
       spriteId: 550829bf994152e4c9d738fac9c438bf
-    - name: enemies_Frame_79
+    - name: Frame_79
       frameIndex: 79
       additiveSortOrder: 0
       cellRect:
@@ -4090,7 +4091,7 @@ ScriptedImporter:
         width: 16
         height: 17
       spriteId: 77a8a7d81dca0ae46ba5420005a123d9
-    - name: enemies_Frame_80
+    - name: Frame_80
       frameIndex: 80
       additiveSortOrder: 0
       cellRect:
@@ -4099,7 +4100,7 @@ ScriptedImporter:
         width: 14
         height: 18
       spriteId: 81d59241df823084b8daf7f1cd118d5c
-    - name: enemies_Frame_81
+    - name: Frame_81
       frameIndex: 81
       additiveSortOrder: 0
       cellRect:
@@ -4108,7 +4109,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: f1e3bca2eaaaba0439ff7d910bd0b2b7
-    - name: enemies_Frame_82
+    - name: Frame_82
       frameIndex: 82
       additiveSortOrder: 0
       cellRect:
@@ -4117,7 +4118,7 @@ ScriptedImporter:
         width: 12
         height: 16
       spriteId: 133954eefc169d347bd6232a76eefabb
-    - name: enemies_Frame_83
+    - name: Frame_83
       frameIndex: 83
       additiveSortOrder: 0
       cellRect:
@@ -4126,7 +4127,7 @@ ScriptedImporter:
         width: 16
         height: 17
       spriteId: b45a6940002b4ab43baf9ef056b856f2
-    - name: enemies_Frame_84
+    - name: Frame_84
       frameIndex: 84
       additiveSortOrder: 0
       cellRect:
@@ -4135,7 +4136,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: 5ce47d982ead81c428c72889f88273c7
-    - name: enemies_Frame_85
+    - name: Frame_85
       frameIndex: 85
       additiveSortOrder: 0
       cellRect:
@@ -4144,7 +4145,7 @@ ScriptedImporter:
         width: 12
         height: 18
       spriteId: 690ff8fbbfa08cf459be23d14114e006
-    - name: enemies_Frame_86
+    - name: Frame_86
       frameIndex: 86
       additiveSortOrder: 0
       cellRect:
@@ -4153,7 +4154,7 @@ ScriptedImporter:
         width: 11
         height: 18
       spriteId: a14bcc29c5c6f0e4ca32df4a4048421e
-    - name: enemies_Frame_87
+    - name: Frame_87
       frameIndex: 87
       additiveSortOrder: 0
       cellRect:
@@ -4162,7 +4163,7 @@ ScriptedImporter:
         width: 13
         height: 18
       spriteId: 15b9c1c8f116ef94b834aae567893fd5
-    - name: enemies_Frame_88
+    - name: Frame_88
       frameIndex: 88
       additiveSortOrder: 0
       cellRect:
@@ -4171,7 +4172,7 @@ ScriptedImporter:
         width: 14
         height: 17
       spriteId: 7ceceacf8d4ea014a84e3b644f456d05
-    - name: enemies_Frame_89
+    - name: Frame_89
       frameIndex: 89
       additiveSortOrder: 0
       cellRect:
@@ -4180,7 +4181,7 @@ ScriptedImporter:
         width: 14
         height: 17
       spriteId: 88849977514443e4e99d2b11ae66e336
-    - name: enemies_Frame_90
+    - name: Frame_90
       frameIndex: 90
       additiveSortOrder: 0
       cellRect:
@@ -4189,7 +4190,7 @@ ScriptedImporter:
         width: 14
         height: 17
       spriteId: 91f4e482737565e45adfc14407b0c5e6
-    - name: enemies_Frame_91
+    - name: Frame_91
       frameIndex: 91
       additiveSortOrder: 0
       cellRect:
@@ -4198,7 +4199,7 @@ ScriptedImporter:
         width: 14
         height: 13
       spriteId: 6e1949827e200824692eb383b65397c8
-    - name: enemies_Frame_92
+    - name: Frame_92
       frameIndex: 92
       additiveSortOrder: 0
       cellRect:
@@ -4207,7 +4208,7 @@ ScriptedImporter:
         width: 15
         height: 9
       spriteId: 30eb94863c6c0fb4182d6ac117532e44
-    - name: enemies_Frame_93
+    - name: Frame_93
       frameIndex: 93
       additiveSortOrder: 0
       cellRect:
@@ -4216,7 +4217,7 @@ ScriptedImporter:
         width: 18
         height: 7
       spriteId: f5d11b4f7d2c47843ae99d1e97a98b05
-    - name: enemies_Frame_94
+    - name: Frame_94
       frameIndex: 94
       additiveSortOrder: 0
       cellRect:
@@ -4225,7 +4226,7 @@ ScriptedImporter:
         width: 19
         height: 6
       spriteId: f2d40d126f38c974bbc7e00aaa46f980
-    - name: enemies_Frame_95
+    - name: Frame_95
       frameIndex: 95
       additiveSortOrder: 0
       cellRect:
@@ -4234,7 +4235,7 @@ ScriptedImporter:
         width: 19
         height: 6
       spriteId: 95c9aec81c138ab4f9f54e2a98dee6a2
-    - name: enemies_Frame_96
+    - name: Frame_96
       frameIndex: 96
       additiveSortOrder: 0
       cellRect:
@@ -4243,7 +4244,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: d5a6994db56e21d468f27ffcc5f2eee3
-    - name: enemies_Frame_97
+    - name: Frame_97
       frameIndex: 97
       additiveSortOrder: 0
       cellRect:
@@ -4252,7 +4253,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: 65fd659676a7cfd4486a77c11b565fc2
-    - name: enemies_Frame_98
+    - name: Frame_98
       frameIndex: 98
       additiveSortOrder: 0
       cellRect:
@@ -4261,7 +4262,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: 0f0a941b737904c43bd3641d5bb3d3d2
-    - name: enemies_Frame_99
+    - name: Frame_99
       frameIndex: 99
       additiveSortOrder: 0
       cellRect:
@@ -4270,7 +4271,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: 8cdb2aa920f209b48959a3521cef194a
-    - name: enemies_Frame_100
+    - name: Frame_100
       frameIndex: 100
       additiveSortOrder: 0
       cellRect:
@@ -4279,7 +4280,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: fab28001228b76a4e9e2aa412b3ad7d6
-    - name: enemies_Frame_101
+    - name: Frame_101
       frameIndex: 101
       additiveSortOrder: 0
       cellRect:
@@ -4288,7 +4289,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: f4dc6ec40b9167944950ba296d6398e0
-    - name: enemies_Frame_102
+    - name: Frame_102
       frameIndex: 102
       additiveSortOrder: 0
       cellRect:
@@ -4297,7 +4298,7 @@ ScriptedImporter:
         width: 14
         height: 15
       spriteId: 42237dc5d80f1fc41820739449eaa316
-    - name: enemies_Frame_103
+    - name: Frame_103
       frameIndex: 103
       additiveSortOrder: 0
       cellRect:
@@ -4306,7 +4307,7 @@ ScriptedImporter:
         width: 15
         height: 16
       spriteId: 21518e44970fbbc4c98cc151ad62e99d
-    - name: enemies_Frame_104
+    - name: Frame_104
       frameIndex: 104
       additiveSortOrder: 0
       cellRect:
@@ -4315,7 +4316,7 @@ ScriptedImporter:
         width: 16
         height: 16
       spriteId: 35ef5f029f315a24e91781e21a5c923b
-    - name: enemies_Frame_105
+    - name: Frame_105
       frameIndex: 105
       additiveSortOrder: 0
       cellRect:
@@ -4324,7 +4325,7 @@ ScriptedImporter:
         width: 17
         height: 15
       spriteId: edacfb01df1c2394ca5dc5b2d4e0a63b
-    - name: enemies_Frame_106
+    - name: Frame_106
       frameIndex: 106
       additiveSortOrder: 0
       cellRect:
@@ -4333,7 +4334,7 @@ ScriptedImporter:
         width: 16
         height: 14
       spriteId: b1ca1ba6f1e96464e94beca7b65285c3
-    - name: enemies_Frame_107
+    - name: Frame_107
       frameIndex: 107
       additiveSortOrder: 0
       cellRect:
@@ -4342,7 +4343,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 7f778a08751510e428cc0c4153a3f6c5
-    - name: enemies_Frame_108
+    - name: Frame_108
       frameIndex: 108
       additiveSortOrder: 0
       cellRect:
@@ -4351,7 +4352,7 @@ ScriptedImporter:
         width: 11
         height: 16
       spriteId: daf7327da3455894ead3d8ec2069cb11
-    - name: enemies_Frame_109
+    - name: Frame_109
       frameIndex: 109
       additiveSortOrder: 0
       cellRect:
@@ -4360,7 +4361,7 @@ ScriptedImporter:
         width: 10
         height: 16
       spriteId: 207081638f3c9b947b7ac7186270cc60
-    - name: enemies_Frame_110
+    - name: Frame_110
       frameIndex: 110
       additiveSortOrder: 0
       cellRect:
@@ -4369,7 +4370,7 @@ ScriptedImporter:
         width: 11
         height: 15
       spriteId: 5b96e7d9e0fe64d41b7563f794435d30
-    - name: enemies_Frame_111
+    - name: Frame_111
       frameIndex: 111
       additiveSortOrder: 0
       cellRect:
@@ -4378,7 +4379,7 @@ ScriptedImporter:
         width: 13
         height: 14
       spriteId: 7b9fb8ad657d0e74fb4bad1606efd1db
-    - name: enemies_Frame_112
+    - name: Frame_112
       frameIndex: 112
       additiveSortOrder: 0
       cellRect:
@@ -4387,7 +4388,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: 0c1e12772c058c24b97171006b33ef17
-    - name: enemies_Frame_113
+    - name: Frame_113
       frameIndex: 113
       additiveSortOrder: 0
       cellRect:
@@ -4396,7 +4397,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: b891ccd9fd7148d459844c9f07065226
-    - name: enemies_Frame_114
+    - name: Frame_114
       frameIndex: 114
       additiveSortOrder: 0
       cellRect:
@@ -4405,7 +4406,7 @@ ScriptedImporter:
         width: 13
         height: 15
       spriteId: 5a23d18ee0dc06944b8100969bfe5636
-    - name: enemies_Frame_115
+    - name: Frame_115
       frameIndex: 115
       additiveSortOrder: 0
       cellRect:
@@ -4414,7 +4415,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: 99621598b09d40842b34d59dd3489b69
-    - name: enemies_Frame_116
+    - name: Frame_116
       frameIndex: 116
       additiveSortOrder: 0
       cellRect:
@@ -4423,7 +4424,7 @@ ScriptedImporter:
         width: 16
         height: 13
       spriteId: b8565d0dafaf40144ad17dc25c003a7a
-    - name: enemies_Frame_117
+    - name: Frame_117
       frameIndex: 117
       additiveSortOrder: 0
       cellRect:
@@ -4432,7 +4433,7 @@ ScriptedImporter:
         width: 29
         height: 13
       spriteId: cd2f4c99523e3a547886f231a02bdd13
-    - name: enemies_Frame_118
+    - name: Frame_118
       frameIndex: 118
       additiveSortOrder: 0
       cellRect:
@@ -4441,7 +4442,7 @@ ScriptedImporter:
         width: 29
         height: 13
       spriteId: 7b1505531313bf749b287df58bfa907d
-    - name: enemies_Frame_119
+    - name: Frame_119
       frameIndex: 119
       additiveSortOrder: 0
       cellRect:
@@ -4450,7 +4451,7 @@ ScriptedImporter:
         width: 27
         height: 13
       spriteId: 7f3a069546544314bb757286fd9ebfe1
-    - name: enemies_Frame_120
+    - name: Frame_120
       frameIndex: 120
       additiveSortOrder: 0
       cellRect:
@@ -4459,7 +4460,7 @@ ScriptedImporter:
         width: 21
         height: 15
       spriteId: 45d282ef3b9c32445a201b3e56137fe3
-    - name: enemies_Frame_121
+    - name: Frame_121
       frameIndex: 121
       additiveSortOrder: 0
       cellRect:
@@ -4468,7 +4469,7 @@ ScriptedImporter:
         width: 20
         height: 16
       spriteId: 102eb0b535d0eb34384d4dd3443d0dd2
-    - name: enemies_Frame_122
+    - name: Frame_122
       frameIndex: 122
       additiveSortOrder: 0
       cellRect:
@@ -4477,7 +4478,7 @@ ScriptedImporter:
         width: 30
         height: 16
       spriteId: 25a3298865f326640b5ba07358503b83
-    - name: enemies_Frame_123
+    - name: Frame_123
       frameIndex: 123
       additiveSortOrder: 0
       cellRect:
@@ -4486,7 +4487,7 @@ ScriptedImporter:
         width: 27
         height: 14
       spriteId: f2535892587c6674381456bc143463b7
-    - name: enemies_Frame_124
+    - name: Frame_124
       frameIndex: 124
       additiveSortOrder: 0
       cellRect:
@@ -4495,7 +4496,7 @@ ScriptedImporter:
         width: 25
         height: 14
       spriteId: 1c9e571cc16fd29499a4304e7051870c
-    - name: enemies_Frame_125
+    - name: Frame_125
       frameIndex: 125
       additiveSortOrder: 0
       cellRect:
@@ -4504,7 +4505,7 @@ ScriptedImporter:
         width: 22
         height: 16
       spriteId: 588d4d541d9dbcb47b4d3abf942aacc3
-    - name: enemies_Frame_126
+    - name: Frame_126
       frameIndex: 126
       additiveSortOrder: 0
       cellRect:
@@ -4513,7 +4514,7 @@ ScriptedImporter:
         width: 12
         height: 15
       spriteId: b09359f9fb8c44b4189f4f92cab14745
-    - name: enemies_Frame_127
+    - name: Frame_127
       frameIndex: 127
       additiveSortOrder: 0
       cellRect:
@@ -4522,7 +4523,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: 691cd30046db86f4bb98a798a0de1af1
-    - name: enemies_Frame_128
+    - name: Frame_128
       frameIndex: 128
       additiveSortOrder: 0
       cellRect:
@@ -4531,7 +4532,7 @@ ScriptedImporter:
         width: 18
         height: 18
       spriteId: d4a8befa1d7483449ba064656dc0ff11
-    - name: enemies_Frame_129
+    - name: Frame_129
       frameIndex: 129
       additiveSortOrder: 0
       cellRect:
@@ -4540,7 +4541,7 @@ ScriptedImporter:
         width: 17
         height: 20
       spriteId: abdf88e614485ca44aef5b3cffe88125
-    - name: enemies_Frame_130
+    - name: Frame_130
       frameIndex: 130
       additiveSortOrder: 0
       cellRect:
@@ -4549,7 +4550,7 @@ ScriptedImporter:
         width: 15
         height: 17
       spriteId: 79515cf5d4ab5744a9f8f4d4825e6c91
-    - name: enemies_Frame_131
+    - name: Frame_131
       frameIndex: 131
       additiveSortOrder: 0
       cellRect:
@@ -4558,7 +4559,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: b52f7bf9125746748ad39f912e63ce69
-    - name: enemies_Frame_132
+    - name: Frame_132
       frameIndex: 132
       additiveSortOrder: 0
       cellRect:
@@ -4567,7 +4568,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: fe71da6d1a43c3943a110d48fbc2b00d
-    - name: enemies_Frame_133
+    - name: Frame_133
       frameIndex: 133
       additiveSortOrder: 0
       cellRect:
@@ -4576,7 +4577,7 @@ ScriptedImporter:
         width: 19
         height: 20
       spriteId: 0a357135683c1d440bfac70696b55c78
-    - name: enemies_Frame_134
+    - name: Frame_134
       frameIndex: 134
       additiveSortOrder: 0
       cellRect:
@@ -4585,7 +4586,7 @@ ScriptedImporter:
         width: 17
         height: 24
       spriteId: 6c0026607371a1a488f35c66a307ae27
-    - name: enemies_Frame_135
+    - name: Frame_135
       frameIndex: 135
       additiveSortOrder: 0
       cellRect:
@@ -4594,7 +4595,7 @@ ScriptedImporter:
         width: 16
         height: 26
       spriteId: 004beafa2c67a6b48b9075ee3367f838
-    - name: enemies_Frame_136
+    - name: Frame_136
       frameIndex: 136
       additiveSortOrder: 0
       cellRect:
@@ -4603,7 +4604,7 @@ ScriptedImporter:
         width: 15
         height: 21
       spriteId: b0d61ba44314c214aa81de8b6efb6589
-    - name: enemies_Frame_137
+    - name: Frame_137
       frameIndex: 137
       additiveSortOrder: 0
       cellRect:
@@ -4612,7 +4613,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 3ffaa5dda1eef3b4d8d6af9a11e29633
-    - name: enemies_Frame_138
+    - name: Frame_138
       frameIndex: 138
       additiveSortOrder: 0
       cellRect:
@@ -4621,7 +4622,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: 1d36c4d105cf32f4a9e9c174a647193a
-    - name: enemies_Frame_139
+    - name: Frame_139
       frameIndex: 139
       additiveSortOrder: 0
       cellRect:
@@ -4630,7 +4631,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: c99598aa812b21b4c9259daf2be9bc51
-    - name: enemies_Frame_140
+    - name: Frame_140
       frameIndex: 140
       additiveSortOrder: 0
       cellRect:
@@ -4639,7 +4640,7 @@ ScriptedImporter:
         width: 16
         height: 13
       spriteId: 16f648dfdaa99964cb00ecbf038e232c
-    - name: enemies_Frame_141
+    - name: Frame_141
       frameIndex: 141
       additiveSortOrder: 0
       cellRect:
@@ -4648,7 +4649,7 @@ ScriptedImporter:
         width: 18
         height: 13
       spriteId: dd5d777c288c44540b4648a95706a802
-    - name: enemies_Frame_142
+    - name: Frame_142
       frameIndex: 142
       additiveSortOrder: 0
       cellRect:
@@ -4657,7 +4658,7 @@ ScriptedImporter:
         width: 21
         height: 14
       spriteId: a7073b3bfd892f94dbffe6036664d429
-    - name: enemies_Frame_143
+    - name: Frame_143
       frameIndex: 143
       additiveSortOrder: 0
       cellRect:
@@ -4666,7 +4667,7 @@ ScriptedImporter:
         width: 23
         height: 10
       spriteId: aaa4a6f6351147c4bbd568ca14857bef
-    - name: enemies_Frame_144
+    - name: Frame_144
       frameIndex: 144
       additiveSortOrder: 0
       cellRect:
@@ -4675,7 +4676,7 @@ ScriptedImporter:
         width: 25
         height: 11
       spriteId: a344d0ad9acb3c346a5e81e3a47baec8
-    - name: enemies_Frame_145
+    - name: Frame_145
       frameIndex: 145
       additiveSortOrder: 0
       cellRect:
@@ -4684,7 +4685,7 @@ ScriptedImporter:
         width: 27
         height: 11
       spriteId: 62f9a0342eeb260499b1bbbb2503220f
-    - name: enemies_Frame_146
+    - name: Frame_146
       frameIndex: 146
       additiveSortOrder: 0
       cellRect:
@@ -4693,7 +4694,7 @@ ScriptedImporter:
         width: 27
         height: 8
       spriteId: 37d1d5567a08781468a0b80f9431be34
-    - name: enemies_Frame_147
+    - name: Frame_147
       frameIndex: 147
       additiveSortOrder: 0
       cellRect:
@@ -4702,7 +4703,7 @@ ScriptedImporter:
         width: 16
         height: 15
       spriteId: 8df73bce6af6bb24aba21f15490ab1bb
-    - name: enemies_Frame_148
+    - name: Frame_148
       frameIndex: 148
       additiveSortOrder: 0
       cellRect:
@@ -4711,7 +4712,7 @@ ScriptedImporter:
         width: 19
         height: 20
       spriteId: ba4908c5cb6d7f6489f840add957fb98
-    - name: enemies_Frame_149
+    - name: Frame_149
       frameIndex: 149
       additiveSortOrder: 0
       cellRect:
@@ -4720,7 +4721,7 @@ ScriptedImporter:
         width: 17
         height: 24
       spriteId: 8fe320b011b73e24db4c803fbffd764d
-    - name: enemies_Frame_150
+    - name: Frame_150
       frameIndex: 150
       additiveSortOrder: 0
       cellRect:
@@ -4729,7 +4730,7 @@ ScriptedImporter:
         width: 16
         height: 26
       spriteId: c96d43347b387b343aa891b80c7de50c
-    - name: enemies_Frame_151
+    - name: Frame_151
       frameIndex: 151
       additiveSortOrder: 0
       cellRect:
@@ -4738,7 +4739,7 @@ ScriptedImporter:
         width: 15
         height: 21
       spriteId: b909d27fd40baae419e73ef9cb39aeed
-    - name: enemies_Frame_152
+    - name: Frame_152
       frameIndex: 152
       additiveSortOrder: 0
       cellRect:
@@ -4747,7 +4748,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: feaf272107ff5d54fb8cebbf6b67b429
-    - name: enemies_Frame_153
+    - name: Frame_153
       frameIndex: 153
       additiveSortOrder: 0
       cellRect:
@@ -4756,7 +4757,7 @@ ScriptedImporter:
         width: 14
         height: 16
       spriteId: b4f9df3f4bef6de43baa8a522c4a6159
-    - name: enemies_Frame_154
+    - name: Frame_154
       frameIndex: 154
       additiveSortOrder: 0
       cellRect:
@@ -4765,7 +4766,7 @@ ScriptedImporter:
         width: 15
         height: 15
       spriteId: ee2131d7aed37654eaa1300a343feaea
-    - name: enemies_Frame_155
+    - name: Frame_155
       frameIndex: 155
       additiveSortOrder: 0
       cellRect:
@@ -4774,7 +4775,7 @@ ScriptedImporter:
         width: 14
         height: 11
       spriteId: 7eae040dc65fbf44e8eff05a1822280a
-    - name: enemies_Frame_156
+    - name: Frame_156
       frameIndex: 156
       additiveSortOrder: 0
       cellRect:
@@ -4783,7 +4784,7 @@ ScriptedImporter:
         width: 14
         height: 12
       spriteId: caf82bdf7cb50d1459f2599b4d6eba4a
-    - name: enemies_Frame_157
+    - name: Frame_157
       frameIndex: 157
       additiveSortOrder: 0
       cellRect:
@@ -4792,7 +4793,7 @@ ScriptedImporter:
         width: 14
         height: 11
       spriteId: 6ea10bce9be887b4c92c9957268a7602
-    - name: enemies_Frame_158
+    - name: Frame_158
       frameIndex: 158
       additiveSortOrder: 0
       cellRect:
@@ -4801,7 +4802,7 @@ ScriptedImporter:
         width: 16
         height: 10
       spriteId: 4ce343868170aa7479891d15874539bc
-    - name: enemies_Frame_159
+    - name: Frame_159
       frameIndex: 159
       additiveSortOrder: 0
       cellRect:
@@ -4810,7 +4811,7 @@ ScriptedImporter:
         width: 17
         height: 11
       spriteId: 3bfa7f2b93416ae4f8de9055c4ac8d83
-    - name: enemies_Frame_160
+    - name: Frame_160
       frameIndex: 160
       additiveSortOrder: 0
       cellRect:
@@ -4819,7 +4820,7 @@ ScriptedImporter:
         width: 18
         height: 11
       spriteId: ecfb4035e6c76ff4798203b18ae13c6e
-    - name: enemies_Frame_161
+    - name: Frame_161
       frameIndex: 161
       additiveSortOrder: 0
       cellRect:
@@ -4847,3 +4848,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
+  previousTextureSize: {x: 256, y: 512}
