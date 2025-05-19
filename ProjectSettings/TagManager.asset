@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Map
+  - Player
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 2877639721
+    locked: 0
+  - name: Character
+    uniqueID: 1089495837
     locked: 0
