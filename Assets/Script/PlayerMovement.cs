@@ -16,11 +16,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Combat")]
     public float attackDamage = 10f;
+
     private int attackIndex = 0;
 
     void Update()
     {
-        // Prevent movement while attacking
         if (!isAttacking)
         {
             rb.velocity = movementInput * moveSpeed;
@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
-        Debug.Log("Movement Input : " + movementInput);
     }
 
     public void OnAttack(InputAction.CallbackContext context)
@@ -45,13 +44,11 @@ public class PlayerMovement : MonoBehaviour
         {
             isAttacking = true;
 
-            // Alternate between Attack1 and Attack2
             string attackAnim = attackIndex % 2 == 0 ? "Attack1" : "Attack2";
             animator.Play(attackAnim);
             attackIndex++;
 
-            // Reset attack after short delay (based on animation length)
-            Invoke(nameof(ResetAttack), 0.5f); // Adjust timing if needed
+            Invoke(nameof(ResetAttack), 0.5f);
         }
     }
 
@@ -68,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.Play("Run");
 
-            // Flip sprite left/right based on horizontal movement
             if (movementInput.x < 0)
                 spriteRenderer.flipX = true;
             else if (movementInput.x > 0)
