@@ -56,6 +56,8 @@ public class SkeletonAI : MonoBehaviour
             {
                 animator.Play("attack");
                 lastAttackTime = Time.time;
+
+                Invoke(nameof(DamagePlayer), 0.4f); // Delay to match attack animation's hit frame
             }
         }
     }
@@ -75,3 +77,4 @@ public class SkeletonAI : MonoBehaviour
         }
     }
 }
+
