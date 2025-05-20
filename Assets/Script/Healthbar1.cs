@@ -6,9 +6,7 @@ public class Healthbar : MonoBehaviour
 {
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private Image HealthBar_Full;
-    using TMPro;
     [SerializeField] private TMP_Text HealthText;
-
 
     private void Start()
     {

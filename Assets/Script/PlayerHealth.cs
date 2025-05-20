@@ -3,49 +3,56 @@ using UnityEngine.InputSystem;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [Header("Health Settings")]
     public float maxHealth = 100f;
     private float _currentHealth;
+
+    [Header("References")]
     public Animator animator;
+    [SerializeField] private Healthbar healthbar;
+
     private bool isDead = false;
 
     public float currentHealth
     {
         get => _currentHealth;
-        private set
-        {
-            if (value < _currentHealth) // If health dropped
-            {
-                if (value > 0 && animator != null)
-                {
-                    Debug.Log("Playing Hit animation"); //debugging if the aninmation is playing
-                    animator.SetTrigger("Hit"); 
-                }
-            }
-
-            _currentHealth = Mathf.Clamp(value, 0, maxHealth);
-
-            if (_currentHealth == 0 && !isDead)
-            {
-                Die();
-            }
-        }
+        private set => _currentHealth = Mathf.Clamp(value, 0, maxHealth);
     }
-
 
     private void Start()
     {
         currentHealth = maxHealth;
 
         if (animator == null)
-            animator = GetComponent<Animator>(); // Fallback if not assigned in Inspector
+            animator = GetComponent<Animator>();
+
+        if (healthbar != null)
+        {
+            healthbar.UpdateHealthBar(currentHealth, maxHealth);
+        }
     }
 
     public void TakeDamage(float amount)
     {
-        if (isDead) return;
+        if (isDead || amount <= 0) return;
 
         currentHealth -= amount;
         Debug.Log("Player took damage: " + amount + " | HP: " + currentHealth);
+
+        if (animator != null)
+        {
+            animator.SetTrigger("Hit");
+        }
+
+        if (healthbar != null)
+        {
+            healthbar.UpdateHealthBar(currentHealth, maxHealth);
+        }
+
+        if (currentHealth == 0)
+        {
+            Die();
+        }
     }
 
     private void Die()
@@ -57,11 +64,11 @@ public class PlayerHealth : MonoBehaviour
 
         if (animator != null)
         {
-            animator.ResetTrigger("Hit"); // Prevents Hit animation from interrupting Death animation
+            animator.ResetTrigger("Hit");
             animator.Play("Death");
         }
 
-        // Stop all movement immediately
+        // Stop player movement
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.velocity = Vector2.zero;
 
@@ -71,5 +78,17 @@ public class PlayerHealth : MonoBehaviour
 
         PlayerInput input = GetComponent<PlayerInput>();
         if (input != null) input.enabled = false;
+    }
+
+    public void Heal(float amount)
+    {
+        if (isDead || amount <= 0) return;
+
+        currentHealth += amount;
+
+        if (healthbar != null)
+        {
+            healthbar.UpdateHealthBar(currentHealth, maxHealth);
+        }
     }
 }
