@@ -61,7 +61,7 @@ public class PlayerHealth : MonoBehaviour
             animator.Play("Death");
         }
 
-        // Stop all motion immediately
+        // Stop all movement immediately
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null) rb.velocity = Vector2.zero;
 
