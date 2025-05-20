@@ -54,7 +54,7 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
         // Destroy after delay (optional: allow death animation to finish)
-        Destroy(gameObject, 1.5f);
+        Destroy(gameObject, 1f);
     }
 
 }

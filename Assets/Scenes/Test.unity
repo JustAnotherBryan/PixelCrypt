@@ -16583,7 +16583,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 654764858}
   attackDamage: 10
   attackPoint: {fileID: 666842809}
-  attackRange: 1
+  attackRange: 0.7
   enemyLayers:
     serializedVersion: 2
     m_Bits: 8

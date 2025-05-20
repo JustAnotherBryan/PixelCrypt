@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 100f;
@@ -21,12 +20,15 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (isDead) return;
-        animator.Play("GettingHit");
+
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         Debug.Log("Player took damage: " + amount + " | HP: " + currentHealth);
 
-        
+        if (animator != null)
+        {
+            animator.Play("GetHit"); // Ensure this state exists in Animator
+        }
 
         if (currentHealth <= 0)
         {
@@ -51,5 +53,4 @@ public class PlayerHealth : MonoBehaviour
         PlayerInput input = GetComponent<PlayerInput>();
         if (input != null) input.enabled = false;
     }
-
 }
