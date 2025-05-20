@@ -13,6 +13,8 @@ public class SkeletonAI : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    public float damage = 10f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,5 +52,20 @@ public class SkeletonAI : MonoBehaviour
             rb.velocity = Vector2.zero;
             animator.Play("idle");
         }
+
+        
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+        }
+    }
+
 }
