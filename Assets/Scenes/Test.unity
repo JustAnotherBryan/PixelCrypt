@@ -34689,10 +34689,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  stopDistance: 0.5
+  stopDistance: 1
+  damage: 10
+  attackCooldown: 1.5
   animator: {fileID: 1004748149}
   player: {fileID: 654764852}
-  damage: 10
 --- !u!4 &1004748154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 5f14eb83915ed69469c67f3a634453df, type: 3}

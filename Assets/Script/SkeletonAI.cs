@@ -5,21 +5,23 @@ public class SkeletonAI : MonoBehaviour
 {
     [Header("Chase Settings")]
     public float moveSpeed = 2f;
-    public float stopDistance = 0.5f;
+    public float stopDistance = 1f;
+
+    [Header("Attack Settings")]
+    public float damage = 10f;
+    public float attackCooldown = 1.5f;
 
     [Header("References")]
     public Animator animator;
     public Transform player;
 
     private Rigidbody2D rb;
-
-    public float damage = 10f;
+    private float lastAttackTime;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // Auto-find player if not set manually
         if (player == null)
         {
             GameObject foundPlayer = GameObject.FindGameObjectWithTag("Player");
@@ -35,13 +37,11 @@ public class SkeletonAI : MonoBehaviour
         Vector2 direction = (player.position - transform.position).normalized;
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Stop moving if close enough
         if (distance > stopDistance)
         {
             rb.velocity = direction * moveSpeed;
             animator.Play("walk");
 
-            // Optional: Flip sprite based on movement direction
             if (direction.x < 0)
                 GetComponent<SpriteRenderer>().flipX = true;
             else if (direction.x > 0)
@@ -50,22 +50,35 @@ public class SkeletonAI : MonoBehaviour
         else
         {
             rb.velocity = Vector2.zero;
-            animator.Play("idle");
-        }
 
-        
+            // Attack if enough time has passed
+            if (Time.time - lastAttackTime >= attackCooldown)
+            {
+                animator.Play("attack");
+                lastAttackTime = Time.time;
+
+                // Optional: delay actual damage to sync with animation
+                Invoke(nameof(DamagePlayer), 0.4f); // 0.4s is animation hit frame
+            }
+            else
+            {
+                animator.Play("idle");
+            }
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void DamagePlayer()
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (player == null) return;
+
+        float distance = Vector2.Distance(transform.position, player.position);
+        if (distance <= stopDistance + 0.1f)
         {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damage);
             }
         }
     }
-
 }

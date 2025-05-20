@@ -31,9 +31,5 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Player died!");
         animator.Play("Death");
-
-        // Disable movement
-        GetComponent<PlayerMovement>()?.enabled = false;
-        GetComponent<PlayerInput>()?.enabled = false;
     }
 }
