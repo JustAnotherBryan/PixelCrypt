@@ -16,8 +16,13 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Combat")]
     public float attackDamage = 10f;
-
     private int attackIndex = 0;
+
+    [Header("Attack Settings")]
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
+
 
     void Update()
     {
@@ -48,9 +53,22 @@ public class PlayerMovement : MonoBehaviour
             animator.Play(attackAnim);
             attackIndex++;
 
+            // Detect enemies in range
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(attackDamage);
+                }
+            }
+
             Invoke(nameof(ResetAttack), 0.5f);
         }
     }
+
 
     private void ResetAttack()
     {
@@ -75,4 +93,12 @@ public class PlayerMovement : MonoBehaviour
             animator.Play("Idle");
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
 }
