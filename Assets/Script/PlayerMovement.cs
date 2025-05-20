@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
-
     void Update()
     {
         if (!isAttacking)
@@ -53,12 +52,12 @@ public class PlayerMovement : MonoBehaviour
             animator.Play(attackAnim);
             attackIndex++;
 
-            // Detect enemies in range
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+            Debug.Log("Attack triggered. Hit enemies count: " + hitEnemies.Length);
 
             foreach (Collider2D enemy in hitEnemies)
             {
-                EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
+                EnemyHealth enemyHealth = enemy.GetComponentInParent<EnemyHealth>();
                 if (enemyHealth != null)
                 {
                     enemyHealth.TakeDamage(attackDamage);
@@ -68,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(ResetAttack), 0.5f);
         }
     }
-
 
     private void ResetAttack()
     {
@@ -100,5 +98,4 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-
 }
