@@ -56,13 +56,6 @@ public class SkeletonAI : MonoBehaviour
             {
                 animator.Play("attack");
                 lastAttackTime = Time.time;
-
-                // Optional: delay actual damage to sync with animation
-                Invoke(nameof(DamagePlayer), 0.4f); // 0.4s is animation hit frame
-            }
-            else
-            {
-                animator.Play("idle");
             }
         }
     }
