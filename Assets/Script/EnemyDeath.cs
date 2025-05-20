@@ -45,7 +45,7 @@ public class EnemyHealth : MonoBehaviour
 
         animator.Play("death");
 
-        // Disable movement
+        // Disable movement after death.......Some funny stuff happened
         SkeletonAI ai = GetComponent<SkeletonAI>();
         if (ai != null)
         {
@@ -53,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
         }
         GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
-        // Destroy after delay (optional: allow death animation to finish)
+        // Destroy enemy sprite after death
         Destroy(gameObject, 1f);
     }
 
