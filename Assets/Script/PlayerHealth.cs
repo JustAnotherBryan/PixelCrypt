@@ -21,10 +21,12 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         if (isDead) return;
-
+        animator.Play("GettingHit");
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         Debug.Log("Player took damage: " + amount + " | HP: " + currentHealth);
+
+        
 
         if (currentHealth <= 0)
         {
