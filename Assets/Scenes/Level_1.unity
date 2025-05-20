@@ -27314,7 +27314,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 44ce771feb39c4c43af39dba51d26e5a, type: 3}
   m_Type: 3
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
@@ -42957,7 +42957,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: f5160807c86df8d4ea52815fe44cbbcb, type: 3}
   m_Type: 3
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
   m_FillAmount: 1
@@ -46090,6 +46090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1469231093}
+  - component: {fileID: 1469231094}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -46118,6 +46119,21 @@ RectTransform:
   m_AnchoredPosition: {x: 44, y: 44}
   m_SizeDelta: {x: -2320, y: -756}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1469231094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469231092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c322393a0318aa745afdbf220539874e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: {fileID: 654764859}
+  HealthBar_Empty: {fileID: 1334826715}
+  HealthBar_Full: {fileID: 773632404}
 --- !u!1 &1475061657
 GameObject:
   m_ObjectHideFlags: 0

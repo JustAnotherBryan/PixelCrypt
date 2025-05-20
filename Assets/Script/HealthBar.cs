@@ -13,8 +13,8 @@ public class Healthbar : MonoBehaviour
     {
         if (currentHealth != null)
         {
-            HealthBar_Full.fillAmount = PlayerHealth.currentHealth / 10;
-            UpdateHealthBar(currentHealth.currentHealth, currentHealth.maxHealth);
+            HealthBar_Full.fillAmount = currentHealth.currentHealth / 10;
+            //UpdateHealthBar(currentHealth.currentHealth, currentHealth.maxHealth);
         }
     }
 
